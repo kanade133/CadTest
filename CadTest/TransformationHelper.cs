@@ -109,5 +109,12 @@ namespace CadTest
                 ed.SetCurrentView(view);
             }
         }
+        public static void ZoomViewport(Viewport viewport, Point3d targetPoint, double scale, double rotation)
+        {
+            viewport.ViewTarget = targetPoint;
+            viewport.ViewCenter = Point2d.Origin;
+            viewport.CustomScale = scale;
+            viewport.TwistAngle = rotation;
+        }
     }
 }
