@@ -115,6 +115,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransformationHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
