@@ -118,6 +118,10 @@
   <ItemGroup>
     <Compile Include="CadSystemVariable.cs" />
     <Compile Include="ImageHelper.cs" />
+    <Compile Include="Jig\ArrowPolyline.cs" />
+    <Compile Include="Jig\ArrowPolylineCollection.cs" />
+    <Compile Include="Jig\MovePointJig.cs" />
+    <Compile Include="Jig\PickPointJig.cs" />
     <Compile Include="WindowManager.cs" />
     <Compile Include="XDataHelper.cs" />
     <Compile Include="Command.cs" />
