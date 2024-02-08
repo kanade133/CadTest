@@ -10,7 +10,6 @@ namespace CadTest.Jig
 {
     public class PickPointJig : EntityJig
     {
-        private Point3d startPoint;
         private Point3d endPoint;
         private readonly string message;
         private readonly ArrowPolyline arrowPolyline;
@@ -18,7 +17,6 @@ namespace CadTest.Jig
         public PickPointJig(ArrowPolyline arrowPolyline, string message) : base(arrowPolyline.Polyline)
         {
             this.arrowPolyline = arrowPolyline;
-            this.startPoint = arrowPolyline.StartPoint;
             this.message = message;
         }
         public Point3d GetPoint()
