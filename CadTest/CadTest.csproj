@@ -107,6 +107,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -122,6 +123,11 @@
     <Compile Include="Jig\ArrowPolylineCollection.cs" />
     <Compile Include="Jig\MovePointJig.cs" />
     <Compile Include="Jig\PickPointJig.cs" />
+    <Compile Include="RibbonManager.cs" />
+    <Compile Include="RibbonView.cs" />
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowManager.cs" />
     <Compile Include="XDataHelper.cs" />
     <Compile Include="Command.cs" />
@@ -130,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
